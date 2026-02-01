@@ -1,13 +1,19 @@
 import { StrictMode } from 'react';
 
 import { createRoot } from 'react-dom/client';
+import { createBrowserRouter, RouterProvider } from 'react-router';
 
-import { App } from './App.tsx';
+import { ThemeProvider } from './providers/ThemeProvider/ThemeProvider';
+import { routes } from './routes';
+import './styles/globals.css';
 
-import './index.css';
+const root = createRoot(document.getElementById('root')!);
+const router = createBrowserRouter(routes);
 
-createRoot(document.getElementById('root')!).render(
+root.render(
   <StrictMode>
-    <App />
+    <ThemeProvider defaultTheme="dark" storageKey="ui-theme">
+      <RouterProvider router={router} />
+    </ThemeProvider>
   </StrictMode>,
 );
