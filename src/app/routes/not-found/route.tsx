@@ -20,7 +20,8 @@ export function NotFoundPage() {
             </p>
             <CardTitle className="text-2xl">Page not found</CardTitle>
             <CardDescription className="text-base">
-              The page you're looking for doesn't exist or has been moved. Go back home to continue.
+              The page you're looking for doesn't exist or has been moved. Go
+              back home to continue.
             </CardDescription>
           </div>
         </CardHeader>

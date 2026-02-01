@@ -1,9 +1,9 @@
-export enum RoutePathEnum {
-  Home = 'home',
-  Buttons = 'buttons',
-}
+export const RoutePathEnum = {
+  Home: 'home',
+  Buttons: 'buttons',
+} as const;
 
-export type RoutePath = `${RoutePathEnum}`;
+export type RoutePath = (typeof RoutePathEnum)[keyof typeof RoutePathEnum];
 
 export interface NavItem {
   path: string;
