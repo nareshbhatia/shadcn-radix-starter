@@ -1,7 +1,8 @@
 # Shadcn Radix Starter
 
 A minimal template to get started with React +
-[shadcn/ui](https://ui.shadcn.com/) + [Radix Primitives](https://www.radix-ui.com/primitives).
+[shadcn/ui](https://ui.shadcn.com/) +
+[Radix Primitives](https://www.radix-ui.com/primitives).
 
 **Tech Stack**
 
