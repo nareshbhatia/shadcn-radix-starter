@@ -1,5 +1,36 @@
 import * as React from 'react';
 
+import {
+  PlusIcon,
+  BluetoothIcon,
+  MoreVerticalIcon,
+  FileIcon,
+  FolderIcon,
+  FolderOpenIcon,
+  FileCodeIcon,
+  MoreHorizontalIcon,
+  FolderSearchIcon,
+  SaveIcon,
+  DownloadIcon,
+  EyeIcon,
+  LayoutIcon,
+  PaletteIcon,
+  SunIcon,
+  MoonIcon,
+  MonitorIcon,
+  UserIcon,
+  CreditCardIcon,
+  SettingsIcon,
+  KeyboardIcon,
+  LanguagesIcon,
+  BellIcon,
+  MailIcon,
+  ShieldIcon,
+  HelpCircleIcon,
+  FileTextIcon,
+  LogOutIcon,
+} from 'lucide-react';
+
 import { Example, ExampleWrapper } from './example';
 import {
   AlertDialog,
@@ -60,36 +91,6 @@ import {
   SelectValue,
 } from './ui/select';
 import { Textarea } from './ui/textarea';
-import {
-  PlusIcon,
-  BluetoothIcon,
-  MoreVerticalIcon,
-  FileIcon,
-  FolderIcon,
-  FolderOpenIcon,
-  FileCodeIcon,
-  MoreHorizontalIcon,
-  FolderSearchIcon,
-  SaveIcon,
-  DownloadIcon,
-  EyeIcon,
-  LayoutIcon,
-  PaletteIcon,
-  SunIcon,
-  MoonIcon,
-  MonitorIcon,
-  UserIcon,
-  CreditCardIcon,
-  SettingsIcon,
-  KeyboardIcon,
-  LanguagesIcon,
-  BellIcon,
-  MailIcon,
-  ShieldIcon,
-  HelpCircleIcon,
-  FileTextIcon,
-  LogOutIcon,
-} from 'lucide-react';
 
 export function ComponentExample() {
   return (
