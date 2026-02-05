@@ -2,6 +2,7 @@ import { RootLayout } from './app/root';
 import { ButtonsPage } from './app/routes/buttons/route';
 import { HomePage } from './app/routes/home/route';
 import { NotFoundPage } from './app/routes/not-found/route';
+import { PostsPage } from './app/routes/posts/route';
 import { mainNavItems } from './config/RouteConfig';
 
 import type { RouteObject } from 'react-router';
@@ -17,6 +18,10 @@ export const routes: RouteObject[] = [
       {
         path: mainNavItems.get('buttons')!.path,
         element: <ButtonsPage />,
+      },
+      {
+        path: mainNavItems.get('posts')!.path,
+        element: <PostsPage />,
       },
     ],
   },
