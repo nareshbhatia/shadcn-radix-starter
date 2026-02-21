@@ -1,8 +1,8 @@
-import { RootLayout } from './app/root';
-import { ButtonsPage } from './app/routes/buttons/route';
-import { HomePage } from './app/routes/home/route';
-import { NotFoundPage } from './app/routes/not-found/route';
-import { PostsPage } from './app/routes/posts/route';
+import { RootLayout } from './app/RootLayout';
+import { ButtonsPage } from './app/routes/buttons/ButtonsPage';
+import { HomePage } from './app/routes/home/HomePage';
+import { NotFoundPage } from './app/routes/not-found/NotFoundPage';
+import { PostsPage } from './app/routes/posts/PostsPage';
 import { mainNavItems } from './config/RouteConfig';
 
 import type { RouteObject } from 'react-router';

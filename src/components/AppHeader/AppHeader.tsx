@@ -2,9 +2,9 @@ import { AtomIcon } from 'lucide-react';
 
 import { ModeToggle } from './ModeToggle';
 import { Navigation } from './Navigation';
-import { siteConfig } from '../../config/site';
+import { siteConfig } from '../../config/SiteConfig';
 
-export function TopBar() {
+export function AppHeader() {
   return (
     <header className="grid grid-cols-[1fr_auto_1fr] h-14 px-4 border-b">
       {/* Left Section */}
