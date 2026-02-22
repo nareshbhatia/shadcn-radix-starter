@@ -1,18 +1,15 @@
-export const RoutePathEnum = {
-  Home: 'home',
-  Buttons: 'buttons',
-  Posts: 'posts',
-} as const;
+import { Home, MousePointerClick, FileText } from 'lucide-react';
 
-export type RoutePath = (typeof RoutePathEnum)[keyof typeof RoutePathEnum];
+import type { LucideIcon } from 'lucide-react';
 
 export interface NavItem {
   path: string;
   title: string;
+  icon: LucideIcon;
 }
 
-export const mainNavItems = new Map<RoutePath, NavItem>([
-  ['home', { path: '/', title: 'Home' }],
-  ['buttons', { path: '/buttons', title: 'Buttons' }],
-  ['posts', { path: '/posts', title: 'Posts' }],
-]);
+export const mainNavItems: NavItem[] = [
+  { path: '/', title: 'Home', icon: Home },
+  { path: '/buttons', title: 'Buttons', icon: MousePointerClick },
+  { path: '/posts', title: 'Posts', icon: FileText },
+];

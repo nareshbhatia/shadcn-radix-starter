@@ -5,24 +5,23 @@ import { NotFoundPage } from './app/routes/not-found/NotFoundPage';
 import { PostsPage } from './app/routes/posts/PostsPage';
 import { mainNavItems } from './config/RouteConfig';
 
+import type { ReactNode } from 'react';
 import type { RouteObject } from 'react-router';
+
+const navElementByPath: Record<string, ReactNode> = {
+  '/': <HomePage />,
+  '/buttons': <ButtonsPage />,
+  '/posts': <PostsPage />,
+};
 
 export const routes: RouteObject[] = [
   {
     element: <RootLayout />,
     children: [
-      {
-        path: '/',
-        element: <HomePage />,
-      },
-      {
-        path: mainNavItems.get('buttons')!.path,
-        element: <ButtonsPage />,
-      },
-      {
-        path: mainNavItems.get('posts')!.path,
-        element: <PostsPage />,
-      },
+      ...mainNavItems.map((item) => ({
+        path: item.path,
+        element: navElementByPath[item.path],
+      })),
     ],
   },
   {
