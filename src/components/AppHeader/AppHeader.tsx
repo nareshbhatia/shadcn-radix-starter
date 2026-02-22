@@ -1,8 +1,6 @@
-import { AtomIcon } from 'lucide-react';
-
+import { HeaderBrand } from './HeaderBrand';
 import { ModeToggle } from './ModeToggle';
 import { Navigation } from './Navigation';
-import { siteConfig } from '../../config/SiteConfig';
 import { SidebarTrigger } from '../ui/sidebar';
 
 export function AppHeader() {
@@ -12,14 +10,7 @@ export function AppHeader() {
       {/* Left Section */}
       <div className="flex items-center gap-3">
         <SidebarTrigger className="-ml-1" />
-        <div className="flex items-center gap-2">
-          <div className="flex items-center justify-center size-7 rounded-lg bg-primary text-primary-foreground">
-            <AtomIcon className="size-5" />
-          </div>
-          <span className="text-base font-medium tracking-wide">
-            {siteConfig.name}
-          </span>
-        </div>
+        <HeaderBrand />
       </div>
 
       {/* Center Section */}
