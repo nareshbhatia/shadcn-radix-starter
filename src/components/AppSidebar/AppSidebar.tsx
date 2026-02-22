@@ -29,7 +29,7 @@ export function AppSidebar() {
                     className="data-[active=true]:bg-primary data-[active=true]:text-primary-foreground hover:bg-accent hover:text-foreground"
                   >
                     <Link to={path}>
-                      <Icon className="w-5 h-5" />
+                      <Icon />
                       <span>{title}</span>
                     </Link>
                   </SidebarMenuButton>
