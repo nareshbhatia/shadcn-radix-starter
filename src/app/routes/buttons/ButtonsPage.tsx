@@ -1,11 +1,11 @@
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 
-import { Example, ExampleWrapper } from '../../../components/example';
+import { Example } from '../../../components/example';
 import { Button, ButtonVariantEnum } from '../../../components/ui/button';
 
 export function ButtonsPage() {
   return (
-    <ExampleWrapper className="md:grid-cols-1">
+    <div className="flex flex-col gap-4 px-8 py-4">
       <Example title="Variants">
         <div className="flex flex-wrap gap-2">
           {Object.values(ButtonVariantEnum).map((variant) => (
@@ -66,6 +66,6 @@ export function ButtonsPage() {
           </Button>
         </div>
       </Example>
-    </ExampleWrapper>
+    </div>
   );
 }
